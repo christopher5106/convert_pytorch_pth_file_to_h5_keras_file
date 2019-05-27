@@ -2,7 +2,7 @@ import torch
 filename = '/sharedfiles/XLM/mlm_tlm_xnli15_1024.pth'
 reloaded = torch.load(filename)
 
-print(reloaded)
+print(reloaded['model'])
 
 # ['model_weights', 'optimizer_weights']
 # list(f1["model_weights"])
